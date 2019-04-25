@@ -1,0 +1,1 @@
+Copying the layout from best-city-guide.png only using Vanilla CSS and Normalize.css
