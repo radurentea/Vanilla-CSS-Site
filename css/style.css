@@ -1,0 +1,174 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  margin:0;
+}
+
+.main-header {
+ padding: .5em 0; 
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+  display:block;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav li {
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.col {
+  margin: 2em 0; 
+}
+/* ---- Layout Containers ---- */
+
+.container {
+  padding: 0 1em; 
+}
+
+header,
+footer {
+  
+  text-align:center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align:center;
+  padding: 2em 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.container {
+  width: 90%;
+  max-width:1140px;
+  margin: 0 auto;
+}
+.secondary {
+  float:left;
+  width:50%;
+}
+.primary {
+  float:left;
+  width:50%;
+}
+
+.tertiary {
+  clear:both;
+}
+
+.name {
+  display: inline-block;
+  float: left; 
+}
+.main-nav {
+  float:right; 
+}
+.main-nav li {
+  display: inline-block;
+}
+.banner {
+  clear:both;
+}
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+@media (min-width: 1200px) {
+  .secondary {
+    display:inline-block;
+    width:30%;
+  }
+  .primary {
+    display:inline-block;
+    width:40%;
+  }
+  
+  .tertiary {
+    display:inline-block;
+    width:30%;
+  }
+  .col {
+  padding-left: 1.5em;
+  padding-right:1.5em;
+  }
+
+}
